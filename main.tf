@@ -4,7 +4,7 @@ resource "aws_vpc" "terraform_vpc" {
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = { Name = "clc15-tf-vpc" 
-           CC ="123456"
+           CC ="1234567"
            Owner ="Devops"
   }
 }
