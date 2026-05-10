@@ -3,7 +3,10 @@ resource "aws_vpc" "terraform_vpc" {
   instance_tenancy     = "default"
   enable_dns_support   = true
   enable_dns_hostnames = true
-  tags = { Name = "clc15-tf-vpc" }
+  tags = { Name = "clc15-tf-vpc" 
+           CC ="123456"
+           Owner ="Devops"
+  }
 }
 
 resource "aws_subnet" "subnet_public_1a" {
